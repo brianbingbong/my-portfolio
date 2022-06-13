@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import * as styles from "./Header.module.scss"
 import NavBarLink from "../navBarLink/NavBarLink"
 
+const headerLinks = ["blog", "projects", "resume"]
+
 const Header = () => {
   return (
     <div className={styles.header}>
@@ -10,10 +12,14 @@ const Header = () => {
         <ul>
           <li>
             <Link to="/" aria-label="home">
-              <div className={styles.logo}>km.</div>
+              <div className={styles.logo}>bo.</div>
             </Link>
           </li>
-          <NavBarLink name="blog" link="/blog" />
+          {headerLinks.map((link: string) => (
+            <li>
+              <NavBarLink name={link} link={`/${link}`} />
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

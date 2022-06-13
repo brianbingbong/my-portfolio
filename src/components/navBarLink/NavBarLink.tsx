@@ -9,11 +9,9 @@ interface Props {
 
 const NavBarLink: React.FC<Props> = ( { name, link } ) => {
   return (
-    <li>
-      <Link to={link} aria-label={name}>
-        <div className={styles.headerLink}>{name}</div>
-      </Link>
-    </li>
+    <Link to={link} aria-label={name}>
+      <div className={styles.headerLink}>{name}</div>
+    </Link>
   )
 }
 
