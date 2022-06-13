@@ -15,8 +15,15 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
+        name: `pages`,
+        path: `${__dirname}/src/content/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/content/blog`,
       },
     },
     `gatsby-transformer-remark`,
