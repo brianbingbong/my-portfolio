@@ -725,7 +725,50 @@ type FileFieldsEnum =
   | 'childMdx.excerpt'
   | 'childMdx.fileAbsolutePath'
   | 'childMdx.frontmatter.date'
+  | 'childMdx.frontmatter.hero_image.absolutePath'
+  | 'childMdx.frontmatter.hero_image.accessTime'
+  | 'childMdx.frontmatter.hero_image.atime'
+  | 'childMdx.frontmatter.hero_image.atimeMs'
+  | 'childMdx.frontmatter.hero_image.base'
+  | 'childMdx.frontmatter.hero_image.birthTime'
+  | 'childMdx.frontmatter.hero_image.birthtime'
+  | 'childMdx.frontmatter.hero_image.birthtimeMs'
+  | 'childMdx.frontmatter.hero_image.blksize'
+  | 'childMdx.frontmatter.hero_image.blocks'
+  | 'childMdx.frontmatter.hero_image.changeTime'
+  | 'childMdx.frontmatter.hero_image.children'
+  | 'childMdx.frontmatter.hero_image.childrenImageSharp'
+  | 'childMdx.frontmatter.hero_image.childrenMarkdownRemark'
+  | 'childMdx.frontmatter.hero_image.childrenMdx'
+  | 'childMdx.frontmatter.hero_image.ctime'
+  | 'childMdx.frontmatter.hero_image.ctimeMs'
+  | 'childMdx.frontmatter.hero_image.dev'
+  | 'childMdx.frontmatter.hero_image.dir'
+  | 'childMdx.frontmatter.hero_image.ext'
+  | 'childMdx.frontmatter.hero_image.extension'
+  | 'childMdx.frontmatter.hero_image.gid'
+  | 'childMdx.frontmatter.hero_image.id'
+  | 'childMdx.frontmatter.hero_image.ino'
+  | 'childMdx.frontmatter.hero_image.mode'
+  | 'childMdx.frontmatter.hero_image.modifiedTime'
+  | 'childMdx.frontmatter.hero_image.mtime'
+  | 'childMdx.frontmatter.hero_image.mtimeMs'
+  | 'childMdx.frontmatter.hero_image.name'
+  | 'childMdx.frontmatter.hero_image.nlink'
+  | 'childMdx.frontmatter.hero_image.prettySize'
+  | 'childMdx.frontmatter.hero_image.publicURL'
+  | 'childMdx.frontmatter.hero_image.rdev'
+  | 'childMdx.frontmatter.hero_image.relativeDirectory'
+  | 'childMdx.frontmatter.hero_image.relativePath'
+  | 'childMdx.frontmatter.hero_image.root'
+  | 'childMdx.frontmatter.hero_image.size'
+  | 'childMdx.frontmatter.hero_image.sourceInstanceName'
+  | 'childMdx.frontmatter.hero_image.uid'
+  | 'childMdx.frontmatter.hero_image_alt'
+  | 'childMdx.frontmatter.hero_image_credit_link'
+  | 'childMdx.frontmatter.hero_image_credit_text'
   | 'childMdx.frontmatter.title'
+  | 'childMdx.gatsbyPath'
   | 'childMdx.headings'
   | 'childMdx.headings.depth'
   | 'childMdx.headings.value'
@@ -912,7 +955,50 @@ type FileFieldsEnum =
   | 'childrenMdx.excerpt'
   | 'childrenMdx.fileAbsolutePath'
   | 'childrenMdx.frontmatter.date'
+  | 'childrenMdx.frontmatter.hero_image.absolutePath'
+  | 'childrenMdx.frontmatter.hero_image.accessTime'
+  | 'childrenMdx.frontmatter.hero_image.atime'
+  | 'childrenMdx.frontmatter.hero_image.atimeMs'
+  | 'childrenMdx.frontmatter.hero_image.base'
+  | 'childrenMdx.frontmatter.hero_image.birthTime'
+  | 'childrenMdx.frontmatter.hero_image.birthtime'
+  | 'childrenMdx.frontmatter.hero_image.birthtimeMs'
+  | 'childrenMdx.frontmatter.hero_image.blksize'
+  | 'childrenMdx.frontmatter.hero_image.blocks'
+  | 'childrenMdx.frontmatter.hero_image.changeTime'
+  | 'childrenMdx.frontmatter.hero_image.children'
+  | 'childrenMdx.frontmatter.hero_image.childrenImageSharp'
+  | 'childrenMdx.frontmatter.hero_image.childrenMarkdownRemark'
+  | 'childrenMdx.frontmatter.hero_image.childrenMdx'
+  | 'childrenMdx.frontmatter.hero_image.ctime'
+  | 'childrenMdx.frontmatter.hero_image.ctimeMs'
+  | 'childrenMdx.frontmatter.hero_image.dev'
+  | 'childrenMdx.frontmatter.hero_image.dir'
+  | 'childrenMdx.frontmatter.hero_image.ext'
+  | 'childrenMdx.frontmatter.hero_image.extension'
+  | 'childrenMdx.frontmatter.hero_image.gid'
+  | 'childrenMdx.frontmatter.hero_image.id'
+  | 'childrenMdx.frontmatter.hero_image.ino'
+  | 'childrenMdx.frontmatter.hero_image.mode'
+  | 'childrenMdx.frontmatter.hero_image.modifiedTime'
+  | 'childrenMdx.frontmatter.hero_image.mtime'
+  | 'childrenMdx.frontmatter.hero_image.mtimeMs'
+  | 'childrenMdx.frontmatter.hero_image.name'
+  | 'childrenMdx.frontmatter.hero_image.nlink'
+  | 'childrenMdx.frontmatter.hero_image.prettySize'
+  | 'childrenMdx.frontmatter.hero_image.publicURL'
+  | 'childrenMdx.frontmatter.hero_image.rdev'
+  | 'childrenMdx.frontmatter.hero_image.relativeDirectory'
+  | 'childrenMdx.frontmatter.hero_image.relativePath'
+  | 'childrenMdx.frontmatter.hero_image.root'
+  | 'childrenMdx.frontmatter.hero_image.size'
+  | 'childrenMdx.frontmatter.hero_image.sourceInstanceName'
+  | 'childrenMdx.frontmatter.hero_image.uid'
+  | 'childrenMdx.frontmatter.hero_image_alt'
+  | 'childrenMdx.frontmatter.hero_image_credit_link'
+  | 'childrenMdx.frontmatter.hero_image_credit_text'
   | 'childrenMdx.frontmatter.title'
+  | 'childrenMdx.gatsbyPath'
   | 'childrenMdx.headings'
   | 'childrenMdx.headings.depth'
   | 'childrenMdx.headings.value'
@@ -2027,6 +2113,7 @@ type Mdx = Node & {
   readonly excerpt: Scalars['String'];
   readonly fileAbsolutePath: Scalars['String'];
   readonly frontmatter: Maybe<MdxFrontmatter>;
+  readonly gatsbyPath: Maybe<Scalars['String']>;
   readonly headings: Maybe<ReadonlyArray<Maybe<MdxHeadingMdx>>>;
   readonly html: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
@@ -2044,6 +2131,11 @@ type Mdx = Node & {
 type Mdx_excerptArgs = {
   pruneLength?: InputMaybe<Scalars['Int']>;
   truncate?: InputMaybe<Scalars['Boolean']>;
+};
+
+
+type Mdx_gatsbyPathArgs = {
+  filePath: InputMaybe<Scalars['String']>;
 };
 
 
@@ -2145,7 +2237,116 @@ type MdxFieldsEnum =
   | 'excerpt'
   | 'fileAbsolutePath'
   | 'frontmatter.date'
+  | 'frontmatter.hero_image.absolutePath'
+  | 'frontmatter.hero_image.accessTime'
+  | 'frontmatter.hero_image.atime'
+  | 'frontmatter.hero_image.atimeMs'
+  | 'frontmatter.hero_image.base'
+  | 'frontmatter.hero_image.birthTime'
+  | 'frontmatter.hero_image.birthtime'
+  | 'frontmatter.hero_image.birthtimeMs'
+  | 'frontmatter.hero_image.blksize'
+  | 'frontmatter.hero_image.blocks'
+  | 'frontmatter.hero_image.changeTime'
+  | 'frontmatter.hero_image.childImageSharp.children'
+  | 'frontmatter.hero_image.childImageSharp.gatsbyImageData'
+  | 'frontmatter.hero_image.childImageSharp.id'
+  | 'frontmatter.hero_image.childMarkdownRemark.children'
+  | 'frontmatter.hero_image.childMarkdownRemark.excerpt'
+  | 'frontmatter.hero_image.childMarkdownRemark.excerptAst'
+  | 'frontmatter.hero_image.childMarkdownRemark.fileAbsolutePath'
+  | 'frontmatter.hero_image.childMarkdownRemark.headings'
+  | 'frontmatter.hero_image.childMarkdownRemark.html'
+  | 'frontmatter.hero_image.childMarkdownRemark.htmlAst'
+  | 'frontmatter.hero_image.childMarkdownRemark.id'
+  | 'frontmatter.hero_image.childMarkdownRemark.rawMarkdownBody'
+  | 'frontmatter.hero_image.childMarkdownRemark.tableOfContents'
+  | 'frontmatter.hero_image.childMarkdownRemark.timeToRead'
+  | 'frontmatter.hero_image.childMdx.body'
+  | 'frontmatter.hero_image.childMdx.children'
+  | 'frontmatter.hero_image.childMdx.excerpt'
+  | 'frontmatter.hero_image.childMdx.fileAbsolutePath'
+  | 'frontmatter.hero_image.childMdx.gatsbyPath'
+  | 'frontmatter.hero_image.childMdx.headings'
+  | 'frontmatter.hero_image.childMdx.html'
+  | 'frontmatter.hero_image.childMdx.id'
+  | 'frontmatter.hero_image.childMdx.mdxAST'
+  | 'frontmatter.hero_image.childMdx.rawBody'
+  | 'frontmatter.hero_image.childMdx.slug'
+  | 'frontmatter.hero_image.childMdx.tableOfContents'
+  | 'frontmatter.hero_image.childMdx.timeToRead'
+  | 'frontmatter.hero_image.children'
+  | 'frontmatter.hero_image.childrenImageSharp'
+  | 'frontmatter.hero_image.childrenImageSharp.children'
+  | 'frontmatter.hero_image.childrenImageSharp.gatsbyImageData'
+  | 'frontmatter.hero_image.childrenImageSharp.id'
+  | 'frontmatter.hero_image.childrenMarkdownRemark'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.children'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.excerpt'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.excerptAst'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.fileAbsolutePath'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.headings'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.html'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.htmlAst'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.id'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.rawMarkdownBody'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.tableOfContents'
+  | 'frontmatter.hero_image.childrenMarkdownRemark.timeToRead'
+  | 'frontmatter.hero_image.childrenMdx'
+  | 'frontmatter.hero_image.childrenMdx.body'
+  | 'frontmatter.hero_image.childrenMdx.children'
+  | 'frontmatter.hero_image.childrenMdx.excerpt'
+  | 'frontmatter.hero_image.childrenMdx.fileAbsolutePath'
+  | 'frontmatter.hero_image.childrenMdx.gatsbyPath'
+  | 'frontmatter.hero_image.childrenMdx.headings'
+  | 'frontmatter.hero_image.childrenMdx.html'
+  | 'frontmatter.hero_image.childrenMdx.id'
+  | 'frontmatter.hero_image.childrenMdx.mdxAST'
+  | 'frontmatter.hero_image.childrenMdx.rawBody'
+  | 'frontmatter.hero_image.childrenMdx.slug'
+  | 'frontmatter.hero_image.childrenMdx.tableOfContents'
+  | 'frontmatter.hero_image.childrenMdx.timeToRead'
+  | 'frontmatter.hero_image.children.children'
+  | 'frontmatter.hero_image.children.id'
+  | 'frontmatter.hero_image.ctime'
+  | 'frontmatter.hero_image.ctimeMs'
+  | 'frontmatter.hero_image.dev'
+  | 'frontmatter.hero_image.dir'
+  | 'frontmatter.hero_image.ext'
+  | 'frontmatter.hero_image.extension'
+  | 'frontmatter.hero_image.gid'
+  | 'frontmatter.hero_image.id'
+  | 'frontmatter.hero_image.ino'
+  | 'frontmatter.hero_image.internal.content'
+  | 'frontmatter.hero_image.internal.contentDigest'
+  | 'frontmatter.hero_image.internal.description'
+  | 'frontmatter.hero_image.internal.fieldOwners'
+  | 'frontmatter.hero_image.internal.ignoreType'
+  | 'frontmatter.hero_image.internal.mediaType'
+  | 'frontmatter.hero_image.internal.owner'
+  | 'frontmatter.hero_image.internal.type'
+  | 'frontmatter.hero_image.mode'
+  | 'frontmatter.hero_image.modifiedTime'
+  | 'frontmatter.hero_image.mtime'
+  | 'frontmatter.hero_image.mtimeMs'
+  | 'frontmatter.hero_image.name'
+  | 'frontmatter.hero_image.nlink'
+  | 'frontmatter.hero_image.parent.children'
+  | 'frontmatter.hero_image.parent.id'
+  | 'frontmatter.hero_image.prettySize'
+  | 'frontmatter.hero_image.publicURL'
+  | 'frontmatter.hero_image.rdev'
+  | 'frontmatter.hero_image.relativeDirectory'
+  | 'frontmatter.hero_image.relativePath'
+  | 'frontmatter.hero_image.root'
+  | 'frontmatter.hero_image.size'
+  | 'frontmatter.hero_image.sourceInstanceName'
+  | 'frontmatter.hero_image.uid'
+  | 'frontmatter.hero_image_alt'
+  | 'frontmatter.hero_image_credit_link'
+  | 'frontmatter.hero_image_credit_text'
   | 'frontmatter.title'
+  | 'gatsbyPath'
   | 'headings'
   | 'headings.depth'
   | 'headings.value'
@@ -2212,6 +2413,7 @@ type MdxFilterInput = {
   readonly excerpt: InputMaybe<StringQueryOperatorInput>;
   readonly fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   readonly frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
+  readonly gatsbyPath: InputMaybe<StringQueryOperatorInput>;
   readonly headings: InputMaybe<MdxHeadingMdxFilterListInput>;
   readonly html: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
@@ -2231,6 +2433,10 @@ type MdxFilterListInput = {
 
 type MdxFrontmatter = {
   readonly date: Maybe<Scalars['Date']>;
+  readonly hero_image: Maybe<File>;
+  readonly hero_image_alt: Maybe<Scalars['String']>;
+  readonly hero_image_credit_link: Maybe<Scalars['String']>;
+  readonly hero_image_credit_text: Maybe<Scalars['String']>;
   readonly title: Scalars['String'];
 };
 
@@ -2244,6 +2450,10 @@ type MdxFrontmatter_dateArgs = {
 
 type MdxFrontmatterFilterInput = {
   readonly date: InputMaybe<DateQueryOperatorInput>;
+  readonly hero_image: InputMaybe<FileFilterInput>;
+  readonly hero_image_alt: InputMaybe<StringQueryOperatorInput>;
+  readonly hero_image_credit_link: InputMaybe<StringQueryOperatorInput>;
+  readonly hero_image_credit_text: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -2602,6 +2812,7 @@ type Query_mdxArgs = {
   excerpt: InputMaybe<StringQueryOperatorInput>;
   fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
+  gatsbyPath: InputMaybe<StringQueryOperatorInput>;
   headings: InputMaybe<MdxHeadingMdxFilterListInput>;
   html: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
