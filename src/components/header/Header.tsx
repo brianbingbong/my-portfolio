@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import * as styles from "./Header.module.scss"
+import NavBarLink from "../navBarLink/NavBarLink"
 
 const Header = () => {
   return (
@@ -12,11 +13,7 @@ const Header = () => {
               <div className={styles.logo}>km.</div>
             </Link>
           </li>
-          <li>
-            <Link to="/blog" aria-label="blog">
-              <div className={styles.headerLink}>blog</div>
-            </Link>
-          </li>
+          <NavBarLink name="blog" link="/blog" />
         </ul>
       </nav>
     </div>
